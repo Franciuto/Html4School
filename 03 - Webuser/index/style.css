@@ -12,9 +12,11 @@
     font-family: Arial, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
-    margin: 0;
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
   }
   
   .profile-photo {
@@ -25,6 +27,14 @@
     margin-bottom: 20px;
   }
   
+  .name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.9%;
+    margin-top: 0.3%;
+  }
+
   .name h1 {
     margin: 0;
     font-size: 2em;
