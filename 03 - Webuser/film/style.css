@@ -123,3 +123,21 @@ footer {
 #button:hover {
     background-color: #FF6B81;
 }
+
+.floating-button {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    padding: 10px 20px;
+    background-color: white;
+    color: darkblue;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: 70ms;
+  }
+  
+  .floating-button:hover {
+    transform: scale(110%);
+  }
