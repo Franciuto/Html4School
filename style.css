@@ -1,6 +1,36 @@
 body {
-    background-color:greenyellow
+    background-color: #253031;
+    margin-left: 10%;
+    margin-right: 10%;
 }
-h1 {
-    color: red;
+
+h1, h2, p {
+    font-family: "Montserrat" , sans-serif;
+}
+
+.title_div {
+    font-family: "Montserrat" , sans-serif;
+    color: #BCAB79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid #2978A0;
+    border-bottom: 4px solid #2978A0;
+}
+
+.trama_div {
+    margin-left: 2%;
+}
+
+.titles {
+    color: #BCAB79;
+}
+
+.paragraph {
+    color: #C6E0FF;
+    text-align: justify;
+}
+
+.table_div {
+    border: white;
 }
