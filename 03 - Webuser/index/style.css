@@ -1,4 +1,4 @@
-/* Palette di Colori */
+ /* Palette di Colori */
 :root {
     --primary-color: #1E90FF; /* Blu brillante */
     --secondary-color: #FF6B6B; /* Rosso corallo */
@@ -123,8 +123,8 @@
   }
   
   /* Footer */
-  .footer {
-    margin-top: 70px;
+  footer {
+    margin-top: 1.3%;
     font-size: 0.9em;
     color: var(--text-color);
   }
@@ -145,4 +145,8 @@
   
   .floating-button:hover {
     background-color: var(--hover-color);
+  }
+
+  #copyright {
+    font-size: 106%;
   }
