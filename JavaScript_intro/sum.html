@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somma Positivi e Negativi</title>
+</head>
+<body>
+    <p id="arr_show"></p>
+    <p id="result"></p>
+    <script>
+        let numbers = new Array(10);
+
+        for (let i = 0; i < numbers.length; i++) {
+            numbers[i] = parseInt(prompt("Inserisci numero " + (i + 1)));
+        }
+
+        document.getElementById("arr_show").innerText = "numbers = [" + numbers.join(", ") + "]";
+        let sumP = 0;
+        let sumN = 0;
+
+        numbers.forEach(element => {
+            if (element > 0) sumP += element;
+            else if (element < 0) sumN += element;
+        });
+
+        document.getElementById("result").innerText =
+            "Somma positivi: " + sumPositives + " | Somma negativi: " + sumNegatives;
+    </script>
+</body>
+</html>
