@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>aura_farming</title>
+  </head>
+  <body
+    style="
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    "
+  >
+    <h1 class="title">Modulo di Registrazione Evento</h1>
+
+    <!DOCTYPE html>
+    <html lang="it">
+      <head>
+        <meta charset="UTF-8" />
+        <title>Registrazione</title>
+      </head>
+      <body>
+        <h1>Modulo di registrazione</h1>
+
+        <form action="/register" method="POST">
+          <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+
+          <div class="radio-group">
+            <label>Genere:</label>
+            <div class="radio-option">
+              <input type="radio" id="maschio" name="genere" value="maschio" />
+              <label for="maschio">Maschio</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="femmina" name="genere" value="femmina" />
+              <label for="femmina">Femmina</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="altro" name="genere" value="altro" />
+              <label for="altro">Altro</label>
+            </div>
+          </div>
+
+          <button type="submit">Invia</button>
+        </form>
+      </body>
+    </html>
+  </body>
+</html>

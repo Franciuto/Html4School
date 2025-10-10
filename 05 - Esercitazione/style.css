@@ -1,0 +1,64 @@
+.title {
+    text-align: center;
+    font-size: x-large;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 30%;
+    height: 400px;
+    background-color: yellow;
+    margin: 5ex auto;
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.inputfield {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.inputfield input {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* child combinator that targets only the child */
+.radio-group > label { 
+    font-weight: bold;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.radio-option input[type="radio"] {
+    margin-right: 8px;
+    width: auto;
+}
