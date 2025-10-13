@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400;600;700&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Cascadia Code", monospace;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  margin: 0;
+}
+
+h1 {
+  margin-top: 40px;
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: white; /* Aggiunto per migliorare la leggibilità */
+}
+
+.mainframe {
+  height: 600px;
+  width: 800px;
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2); /* Aggiunto per dare profondità */
+}
+
+.mainframe h2 {
+  margin-top: 50px;
+  font-size: 40px;
+  color: #2c3e50;
+}
+
+.mainframe button {
+  height: 80px;
+  width: 300px;
+  border: 2px solid #f5576c;
+  background-color: #f5576c;
+  color: white; 
+  font-size: 30px;
+  font-family: "Cascadia Code", monospace; 
+  border-radius: 10px;
+  cursor: pointer; 
+  transition: all 0.3s ease;
+}
+
+.mainframe button:hover {
+  background-color: #f093fb;
+  border-color: #f093fb; 
+  transform: translateY(-2px);
+}
+
+.mainframe button:active {
+  transform: translateY(0); 
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%; 
+  margin-top: 120px;
+}
+
+#counter_output {
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightgray;
+  height: 100px;
+  width: 700px;
+  border-radius: 16px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  font-weight: 700;
+  color: #f5576c;
+}
