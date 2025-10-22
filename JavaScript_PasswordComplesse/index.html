@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Generatore password complesse</h1>
+    <p>Quante password vuoi generare: </p>
+    <input type="number" id="p_number">
+    <button onclick="generatePasswords()">Generate</button>
+    <p id="passwords"></p>
+    <script>
+        let passwordN = document.getElementById("p_number");
+        let output = document.getElementById("passwords")
+
+        function generatePassword(length = 12) {
+            let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_*+%&$="
+            let password = "";
+            for (let i = 0; i < length; i++) {
+                let randomIndex = Math.floor(Math.random() * chars.length);
+                password += chars[randomIndex];
+            }
+            return password;
+        }
+
+        function generatePasswords() {
+            let n = parseInt(passwordN.value);
+            let result = "";
+            for (let index = 0; index < n; index++) {
+                result += generatePassword() + "<br>";
+            }
+            output.innerHTML = result;
+        }
+
+    </script>
+</body>
+
+</html>
