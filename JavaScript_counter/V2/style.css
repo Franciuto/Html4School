@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400;600;700&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Cascadia Code", monospace;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  margin: 0;
+}
+
+h1 {
+  margin-top: 40px;
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.mainframe {
+  height: 650px;
+  width: 800px;
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+}
+
+.mainframe h2 {
+  font-size: 40px;
+  color: #2c3e50;
+}
+
+.box-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.box-label {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+#counter_output,
+#increment {
+  border: 2px solid lightgray;
+  border-radius: 16px;
+  height: 80px;
+  width: 700px; 
+  font-size: 60px;
+  font-weight: 700;
+  color: #f5576c;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.button-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.mainframe button {
+  height: 80px;
+  width: 300px;
+  border: 2px solid #f5576c;
+  background-color: #f5576c;
+  color: white;
+  font-size: 30px;
+  font-family: "Cascadia Code", monospace;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mainframe button:hover {
+  background-color: #f093fb;
+  border-color: #f093fb;
+  transform: translateY(-2px);
+}
+
+.mainframe button:active {
+  transform: translateY(0);
+}
