@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aura_calculator</title>
+</head>
+<style>
+    .input {
+        display: flex;
+        width: 30%;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+</style>
+
+<body>
+    <h1 style="color: red; text-align: center;">Welcome to aura_calculator</h1>
+    <p style="font-weight: bold;">Inserisci la tabellina desiderata</p>
+    <input class="input" type="text" id="number" placeholder="Esempio: 7">
+    <button onclick="get_results()">Invia</button>
+    <div id="output"></div>
+</body>
+<script>
+
+    function get_results() {
+        let n = Number(document.getElementById("number").value);
+        let output = document.getElementById("output")
+        output.innerHTML = "";
+        for (let i = 0; i <= 10; i++) {
+            let p = document.createElement("p");
+            p.innerText = n + " * " + i + " = " + (n * i);
+            output.appendChild(p);
+        }
+    }
+
+
+</script>
+
+</html>
