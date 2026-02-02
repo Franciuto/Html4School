@@ -1,0 +1,16 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sensitive files
+*.password.txt
+aura_password.txt
+
+# Dependencies (use CDN or document how to download)
+# vendor/bootstrap/
