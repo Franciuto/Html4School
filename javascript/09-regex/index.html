@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <title>Calcolo preventivo</title>
+</head>
+
+<body>
+    <div class="container" style="max-width: 600px; margin-top: 50px;">
+        <h1 class="display-1 font-monospace fw-bold text-center" style="font-size: 40px;">🫡 Calcolo preventivo 🫡</h1>
+        <div class="mb-3">
+            <label for="" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="name" value="" required />
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">E-mail</label>
+            <input type="text" class="form-control" id="email" value="" required />
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Telefono</label>
+            <input type="text" class="form-control" id="phone" value="" required />
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Budget (€)</label>
+            <input type="text" class="form-control" id="budget" value="" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Competenze richieste</label>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="10" id="html" />
+                <label class="form-check-label" for="html">HTML</label>
+            </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="20" id="php" />
+                <label class="form-check-label" for="php">PHP</label>
+            </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="15" id="asp" />
+                <label class="form-check-label" for="asp">ASP</label>
+            </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="25" id="java" />
+                <label class="form-check-label" for="java">Java</label>
+            </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="30" id="cpp" />
+                <label class="form-check-label" for="cpp">C++</label>
+            </div>
+            <div class="invalid-feedback d-block"></div>
+        </div>
+        <div class="d-grid gap-2 mt-3">
+            <button type="button" name="" id="button" class="btn btn-primary">
+                Invia
+            </button>
+        </div>
+        <div id="output" ></div>
+</body>
