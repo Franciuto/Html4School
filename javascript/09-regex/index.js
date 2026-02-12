@@ -50,11 +50,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function checkAll() {
-        validateField(username, /^.{3,}$/);
-        validateField(email, /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/);
-        validateField(phone, /^\d{10}$/);
-        validateField(budget, /^\d+$/);
-        validateCheckboxes();
+        const isNameValid = validateField(username, /^.{3,}$/);
+        const isEmailValid = validateField(email, /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/);
+        const isPhoneValid = validateField(phone, /^\d{10}$/);
+        const isBudgetValid = validateField(budget, /^\d+$/);
+        const isCheckboxValid = validateCheckboxes();
+        
+        return isNameValid && isEmailValid && isPhoneValid && isBudgetValid && isCheckboxValid;
     }
 
     checkboxes.forEach(cb => {
@@ -78,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     button.addEventListener("click", () => {
-        checkAll();
+        if (checkAll()) {
         let costoFinale = calcolaPreventivo();
         let budgetValue = Number(budget.value);
 
@@ -86,5 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
         output.innerHTML += costoFinale <= budgetValue
             ? `<p class="text-success">Budget sufficiente ✅</p>`
             : `<p class="text-danger">Budget insufficiente 🔴</p>`;
+        }
     })
 });
